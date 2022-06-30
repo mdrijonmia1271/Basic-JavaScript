@@ -12,8 +12,21 @@ function add(num1, num2){
     // console.log(result1);
 }
 add(10, 5);
+// inchi to feet converted ----------------------------------------------
+function inchToFeet(inch){
+    var Feet = inch / 12;
+    return Feet;
+}
+var result = inchToFeet(36);
+// console.log(result);
+// name change.....................
+var name = "Rijon";
+if(name.length > 4){
+    name = "Mohosin";
+}
+// console.log(name);
 
-// All English Tenses Structure and tenses name...................................
+// All English Tenses Structure and tenses name------------------------------------------------
 function allSimple(){
     console.log("Simple Tenses:- ");
     console.log("Present Simple :  Sub + V1 + Obj + Ext.");
@@ -42,4 +55,4 @@ function allPerfectContinuous(){
 allSimple();
 allContinuous();
 allPerfect();
-allPerfectContinuous();
+allPerfectContinuous();     
