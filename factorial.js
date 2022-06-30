@@ -9,7 +9,8 @@ function factorial(fact){
 }
 let result =  factorial(5);
 // console.log(result);
-// factorial use while loop...........
+
+// factorial use while loop..........................
 function factorialWhile(factNum){
     let startVlue = 1;
     let i = 1;
@@ -17,7 +18,20 @@ function factorialWhile(factNum){
         startVlue = startVlue * i;
         i++;
     }
-    return factNum+" The factorial Number : "+startVlue;
+    return factNum+"! The factorial Number : "+startVlue;
 }
 const factResult = factorialWhile(6);
-console.log(factResult);
+// console.log(factResult);
+
+// factorials use Recursive........................
+function recursiveFact(n){
+    if(n == 0){
+        return 1;
+    }
+    else{
+        return n * recursiveFact(n-1);
+    }
+}
+
+const factResult1 = recursiveFact(10);
+console.log(factResult1);
